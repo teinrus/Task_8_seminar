@@ -1,4 +1,4 @@
-from Task_8_seminar.data_create import name_data, surname_data, phone_data, address_data
+from data_create import name_data, surname_data, phone_data, address_data
 
 
 def input_data():
@@ -29,7 +29,7 @@ def input_data():
 
 
 def print_data():
-    print('Вывожу данные для Вас из 1-ого файла\n')
+    print('Вывожу данные для Вас данные из 1-ого файла\n')
     with open('data_first_variant.csv', 'r', encoding='utf-8') as file:
         data_first = file.readlines()
         data_first_version_second = []
@@ -41,7 +41,7 @@ def print_data():
                 j = i
         data_first = data_first_version_second
         print(''.join(data_first))
-    print('Вывожу данные для Вас из 2-ого файла\n')
+    print('Вывожу данные для Вас данные из 2-ого файла\n')
     with open('data_second_variant.csv', 'r', encoding='utf-8') as file:
         data_second = list(file.readlines())
         print(*data_second)
